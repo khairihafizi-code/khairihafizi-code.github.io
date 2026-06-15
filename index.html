@@ -239,6 +239,30 @@
             border: none;
         }
 
+        /* FIXED Screenshot Styling */
+        .screenshot-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 1.5rem 0 1.5rem; /* Clean blend into the text */
+            background: transparent; /* Removed the ugly dark box */
+        }
+
+        .phone-screenshot {
+            width: 45%; /* Uses percentage so they never overflow the card */
+            max-width: 140px; /* Caps the size so they don't look giant on PC */
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .phone-screenshot:hover {
+            transform: scale(1.05);
+        }
+
         /* Buttons */
         .btn-container {
             margin-top: auto;
@@ -368,6 +392,10 @@
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/8O7GmtGUL6Q?si=zSJx34W5rhlUVARj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                    <!-- 1 Screenshot -->
+                    <div class="screenshot-container">
+                        <img src="lab1.png" alt="Lab 1 UI Screenshot" class="phone-screenshot">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Lab 1 (UI)</h3>
                         <p class="card-description">In this lab, I learned the fundamentals of Jetpack Compose by building static UI layouts. It was fascinating to transition from traditional XML to a declarative UI approach using basic components like Columns, Rows, and Modifiers.</p>
@@ -378,6 +406,11 @@
                 <div class="card">
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/7SvdSlyoaM4?si=CTmv6_aEFT4b0DVz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <!-- 2 Screenshots -->
+                    <div class="screenshot-container">
+                        <img src="lab2_1.png" alt="Lab 2 Screenshot 1" class="phone-screenshot">
+                        <img src="lab2_2.png" alt="Lab 2 Screenshot 2" class="phone-screenshot">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Lab 2 (Interaction)</h3>
@@ -390,6 +423,11 @@
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/St8GN1TKOXI?si=mcpmPYdNs3UNFqVV" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                    <!-- 2 Screenshots -->
+                    <div class="screenshot-container">
+                        <img src="lab3_1.png" alt="Lab 3 Screenshot 1" class="phone-screenshot">
+                        <img src="lab3_2.png" alt="Lab 3 Screenshot 2" class="phone-screenshot">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Lab 3 (Material Design)</h3>
                         <p class="card-description">I explored Material Design 3 principles, applying custom themes, colors, and typography. It taught me the importance of a consistent and aesthetically pleasing user experience through standard components like Scaffold and Cards.</p>
@@ -401,6 +439,11 @@
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/pcUGW_3pOXk?si=shEgnsinaQKhw8KM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                    <!-- 2 Screenshots -->
+                    <div class="screenshot-container">
+                        <img src="lab4_1.png" alt="Lab 4 Screenshot 1" class="phone-screenshot">
+                        <img src="lab4_2.png" alt="Lab 4 Screenshot 2" class="phone-screenshot">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Lab 4 (Navigation)</h3>
                         <p class="card-description">Navigation in Compose was the major focus here. I successfully implemented NavHost and NavController to seamlessly transition between multiple screens, which became the essential backbone of my future multi-screen projects.</p>
@@ -411,6 +454,11 @@
                 <div class="card">
                     <div class="video-wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/oHfhjPhV7vY?si=9ZPVIVIWDBX9cka0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <!-- 2 Screenshots -->
+                    <div class="screenshot-container">
+                        <img src="lab5_1.png" alt="Lab 5 Screenshot 1" class="phone-screenshot">
+                        <img src="lab5_2.png" alt="Lab 5 Screenshot 2" class="phone-screenshot">
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Lab 5 (Room)</h3>
@@ -506,4 +554,3 @@
 
 </body>
 </html>
-
